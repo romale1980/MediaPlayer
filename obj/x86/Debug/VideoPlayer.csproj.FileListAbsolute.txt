@@ -1,0 +1,16 @@
+D:\VideoPlayer\VideoPlayer\bin\Debug\VideoPlayer.exe
+D:\VideoPlayer\VideoPlayer\bin\Debug\VideoPlayer.pdb
+D:\VideoPlayer\VideoPlayer\obj\x86\Debug\MainWindow.baml
+D:\VideoPlayer\VideoPlayer\obj\x86\Debug\MainWindow.g.cs
+D:\VideoPlayer\VideoPlayer\obj\x86\Debug\App.g.cs
+D:\VideoPlayer\VideoPlayer\obj\x86\Debug\VideoPlayer_MarkupCompile.cache
+D:\VideoPlayer\VideoPlayer\obj\x86\Debug\VideoPlayer.g.resources
+D:\VideoPlayer\VideoPlayer\obj\x86\Debug\VideoPlayer.Properties.Resources.resources
+D:\VideoPlayer\VideoPlayer\obj\x86\Debug\VideoPlayer.csproj.GenerateResource.Cache
+D:\VideoPlayer\VideoPlayer\obj\x86\Debug\VideoPlayer.exe
+D:\VideoPlayer\VideoPlayer\obj\x86\Debug\VideoPlayer.pdb
+D:\VideoPlayer\VideoPlayer\obj\x86\Debug\Style1.baml
+D:\VideoPlayer\VideoPlayer\obj\x86\Debug\App.baml
+D:\VideoPlayer\VideoPlayer\obj\x86\Debug\VideoPlayer.csprojResolveAssemblyReference.cache
+D:\VideoPlayer\VideoPlayer\bin\Debug\taglib-sharp.dll
+D:\VideoPlayer\VideoPlayer\obj\x86\Debug\Style2.baml

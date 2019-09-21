@@ -1,0 +1,35 @@
+D:\MediaPlayer\MediaPlayer\bin\Release\MediaPlayer.exe
+D:\MediaPlayer\MediaPlayer\bin\Release\MediaPlayer.pdb
+D:\MediaPlayer\MediaPlayer\bin\Release\CoreAudioApi.dll
+D:\MediaPlayer\MediaPlayer\bin\Release\taglib-sharp.dll
+D:\MediaPlayer\MediaPlayer\obj\x86\Release\MediaPlayer.csprojResolveAssemblyReference.cache
+D:\MediaPlayer\MediaPlayer\obj\x86\Release\MainWindow.baml
+D:\MediaPlayer\MediaPlayer\obj\x86\Release\Style1.baml
+D:\MediaPlayer\MediaPlayer\obj\x86\Release\Style2.baml
+D:\MediaPlayer\MediaPlayer\obj\x86\Release\Style3.baml
+D:\MediaPlayer\MediaPlayer\obj\x86\Release\App.baml
+D:\MediaPlayer\MediaPlayer\obj\x86\Release\MainWindow.g.cs
+D:\MediaPlayer\MediaPlayer\obj\x86\Release\App.g.cs
+D:\MediaPlayer\MediaPlayer\obj\x86\Release\MediaPlayer_MarkupCompile.cache
+D:\MediaPlayer\MediaPlayer\obj\x86\Release\MediaPlayer.g.resources
+D:\MediaPlayer\MediaPlayer\obj\x86\Release\MediaPlayer.Properties.Resources.resources
+D:\MediaPlayer\MediaPlayer\obj\x86\Release\MediaPlayer.csproj.GenerateResource.Cache
+D:\MediaPlayer\MediaPlayer\obj\x86\Release\MediaPlayer.exe
+D:\MediaPlayer\MediaPlayer\obj\x86\Release\MediaPlayer.pdb
+D:\7. Учеба\Projects\MediaPlayer WPF\MediaPlayer\bin\Release\MediaPlayer.exe
+D:\7. Учеба\Projects\MediaPlayer WPF\MediaPlayer\bin\Release\MediaPlayer.pdb
+D:\7. Учеба\Projects\MediaPlayer WPF\MediaPlayer\bin\Release\CoreAudioApi.dll
+D:\7. Учеба\Projects\MediaPlayer WPF\MediaPlayer\obj\x86\Release\MediaPlayer.csprojResolveAssemblyReference.cache
+D:\7. Учеба\Projects\MediaPlayer WPF\MediaPlayer\obj\x86\Release\MainWindow.baml
+D:\7. Учеба\Projects\MediaPlayer WPF\MediaPlayer\obj\x86\Release\Style1.baml
+D:\7. Учеба\Projects\MediaPlayer WPF\MediaPlayer\obj\x86\Release\Style2.baml
+D:\7. Учеба\Projects\MediaPlayer WPF\MediaPlayer\obj\x86\Release\Style3.baml
+D:\7. Учеба\Projects\MediaPlayer WPF\MediaPlayer\obj\x86\Release\App.baml
+D:\7. Учеба\Projects\MediaPlayer WPF\MediaPlayer\obj\x86\Release\MainWindow.g.cs
+D:\7. Учеба\Projects\MediaPlayer WPF\MediaPlayer\obj\x86\Release\App.g.cs
+D:\7. Учеба\Projects\MediaPlayer WPF\MediaPlayer\obj\x86\Release\MediaPlayer_MarkupCompile.cache
+D:\7. Учеба\Projects\MediaPlayer WPF\MediaPlayer\obj\x86\Release\MediaPlayer.g.resources
+D:\7. Учеба\Projects\MediaPlayer WPF\MediaPlayer\obj\x86\Release\MediaPlayer.Properties.Resources.resources
+D:\7. Учеба\Projects\MediaPlayer WPF\MediaPlayer\obj\x86\Release\MediaPlayer.csproj.GenerateResource.Cache
+D:\7. Учеба\Projects\MediaPlayer WPF\MediaPlayer\obj\x86\Release\MediaPlayer.exe
+D:\7. Учеба\Projects\MediaPlayer WPF\MediaPlayer\obj\x86\Release\MediaPlayer.pdb

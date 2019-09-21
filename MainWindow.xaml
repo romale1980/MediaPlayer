@@ -1,0 +1,350 @@
+﻿<Window x:Class="MediaPlayer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MediaPlayer" Height="450" Width="600" Name="win" WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True" Background="Transparent" WindowStyle="None" MinWidth="450" MinHeight="200"
+        ResizeMode="CanResizeWithGrip" Closing="win_Closing">
+    <Border Style="{DynamicResource ResourceKey=bord1}">
+        <Border  Style="{DynamicResource ResourceKey=bord2}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="16" />
+                    <RowDefinition Height="50" />
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Style="{DynamicResource ResourceKey=logo}" Grid.Column="0" Text="MediaPlayer" MouseDown="Border_MouseDown" />
+                    <TextBlock Name="titleplay" Grid.Column="1" Style="{DynamicResource ResourceKey=txt1}" MouseDown="Border_MouseDown" />
+                <Grid Grid.Column="2" HorizontalAlignment="Right">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Button Style="{DynamicResource ResourceKey=winbtn}" Name="min" Grid.Column="0" Click="min_Click">
+                        <Button.Background>
+                            <ImageBrush Stretch="None" Viewbox="5,5,0,0" ViewboxUnits="Absolute"
+                                        ImageSource="{DynamicResource ResourceKey=bmp3}"></ImageBrush>
+                        </Button.Background>
+                    </Button>
+                    <Button Style="{DynamicResource ResourceKey=winbtn}" Name="max" Grid.Column="1" Click="max_Click">
+                        <Button.Background>
+                            <ImageBrush Stretch="None" Viewbox="30,5,0,0" ViewboxUnits="Absolute"
+                                        ImageSource="{DynamicResource ResourceKey=bmp3}"></ImageBrush>
+                        </Button.Background>
+                    </Button>
+                    <Button Style="{DynamicResource ResourceKey=winbtn}" Name="close" Grid.Column="2" Click="close_Click">
+                        <Button.Background>
+                            <ImageBrush Stretch="None" Viewbox="55,5,0,0" ViewboxUnits="Absolute"
+                                        ImageSource="{DynamicResource ResourceKey=bmp3}"></ImageBrush>
+                        </Button.Background>
+                    </Button>
+                </Grid>
+                </Grid>
+                <Grid Grid.Row="1" MouseDown="Border_MouseDown" Background="Black" Name="grid" Margin="5 2">
+                    <MediaElement x:Name="media" Source="{x:Null}" LoadedBehavior="Manual"
+                                  MediaEnded="media_MediaEnded" MediaOpened="media_MediaOpened" />
+                    <Grid Name="tags" Style="{DynamicResource ResourceKey=taglist}">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Image Style="{DynamicResource ResourceKey=IMG2}" />
+                        <Image Name="imgTag" Style="{DynamicResource ResourceKey=IMG}" Source="{DynamicResource CD}"  RenderTransformOrigin="0.5,0.5">
+                            <Image.RenderTransform>
+                                <RotateTransform x:Name="AnimatedRotateTransform" Angle="0" />
+                            </Image.RenderTransform>
+                        </Image>
+                        <Grid Style="{DynamicResource ResourceKey=xTitle}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <TextBlock Grid.Row="0" Grid.Column="0" Style="{DynamicResource ResourceKey=tagaudio}"
+                                       Text="Исполнитель: " />
+                            <TextBlock Grid.Row="0" Grid.Column="1" Style="{DynamicResource ResourceKey=tagaudio}"
+                                       Name="artist" />
+                            <TextBlock Grid.Row="1" Grid.Column="0" Style="{DynamicResource ResourceKey=tagaudio}"
+                                       Text="Название: " />
+                            <TextBlock Grid.Row="1" Grid.Column="1" Style="{DynamicResource ResourceKey=tagaudio}"
+                                       Name="title" />
+                            <TextBlock Grid.Row="2" Grid.Column="0" Style="{DynamicResource ResourceKey=tagaudio}"
+                                       Text="Альбом: " />
+                            <TextBlock Grid.Row="2" Grid.Column="1" Style="{DynamicResource ResourceKey=tagaudio}"
+                                       Name="album" />
+                            <TextBlock Grid.Row="3" Grid.Column="0" Style="{DynamicResource ResourceKey=tagaudio}"
+                                       Text="Жанр: " />
+                            <TextBlock Grid.Row="3" Grid.Column="1" Style="{DynamicResource ResourceKey=tagaudio}"
+                                       Name="genre" />
+                            <TextBlock Grid.Row="4" Grid.Column="0" Style="{DynamicResource ResourceKey=tagaudio}"
+                                       Text="Год: " />
+                            <TextBlock Grid.Row="4" Grid.Column="1" Style="{DynamicResource ResourceKey=tagaudio}"
+                                       Name="year" />
+                        </Grid>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Label Name="pllist" Grid.Column="0" Style="{DynamicResource ResourceKey=playlist}"
+                               Height="{Binding ElementName=grid,Path=Height}">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="25" />
+                                    <RowDefinition Height="45" />
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="20" />
+                                </Grid.RowDefinitions>
+                                <Grid Grid.Row="0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="35" />
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Style="{DynamicResource ResourceKey=txt}" Grid.Column="0" Text="Плейлисты" />
+                                    <Button Style="{DynamicResource ResourceKey=winbtn}" Grid.Column="1"
+                                            HorizontalAlignment="Right" Click="OpenClosePl">
+                                        <Button.Background>
+                                            <ImageBrush Stretch="None" Viewbox="55,5,0,0" ViewboxUnits="Absolute"
+                                                    ImageSource="{DynamicResource ResourceKey=bmp3}"></ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+                                </Grid>
+                                <Grid Grid.Row="1" Margin="0 5">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*" />
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+                                    <RadioButton Name="rb_audio"  Grid.Column="0" Grid.Row="0" GroupName="grup"
+                                             Content="Аудио" Checked="rb_Checked" />
+                                    <RadioButton Name="rb_video" Grid.Column="0" Grid.Row="1" GroupName="grup"
+                                                 Content="Видео" Checked="rb_Checked" />
+                                    <RadioButton Name="rb_img" Grid.Column="1" Grid.Row="0" GroupName="grup"
+                                                 Content="Изображения" Checked="rb_Checked" />
+                                    <RadioButton Name="rb_all" Grid.Column="1" Grid.Row="1" GroupName="grup"
+                                                 Content="Смешанные" IsChecked="True" Checked="rb_Checked"/>
+                                </Grid>
+                                <ListView Name="listPlay" Grid.Row="2" Style="{DynamicResource ResourceKey=pllistView}"
+                                       SelectionChanged="listPlay_SelectionChanged">
+                                    <ListView.ItemTemplate>
+                                        <DataTemplate>
+                                            <Grid>
+                                                <TextBlock Text="{Binding name}" TextWrapping="Wrap" />
+                                            </Grid>
+                                        </DataTemplate>
+                                    </ListView.ItemTemplate>
+                                </ListView>
+                                <Border Name="createBord" Style="{DynamicResource ResourceKey=borderAddPl}" Grid.Row="2">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="35" />
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="30" />
+                                            <RowDefinition Height="*" />
+                                        </Grid.RowDefinitions>
+                                        <TextBlock Style="{DynamicResource ResourceKey=txt}" Grid.Row="0" Grid.Column="0" 
+                                               Text="Имя плейлиста:" />
+                                        <Button Style="{DynamicResource ResourceKey=winbtn}" Grid.Row="0" Grid.Column="1"
+                                            Click="create_Click">
+                                            <Button.Background>
+                                                <ImageBrush Stretch="None" Viewbox="55,5,0,0" ViewboxUnits="Absolute"
+                                                        ImageSource="{DynamicResource ResourceKey=bmp3}" />
+                                            </Button.Background>
+                                        </Button>
+                                        <TextBox Name="newList" Grid.Row="1" Grid.Column="0" Height="25" Margin="5 0"
+                                            MaxLength="40" VerticalContentAlignment="Center" HorizontalAlignment="Stretch" />
+                                        <Button Name="ok" Grid.Column="1" Grid.Row="1" Content="OK" Tag="OK" Margin="0 0 5 0"
+                                            Style="{DynamicResource ResourceKey=plbtn}" Click="ok_Click" />
+                                    </Grid>
+                                </Border>
+                                <Grid Grid.Row="3">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Button Name="create" Grid.Column="0" Content="Создать" Tag="Создать"
+                                        Style="{DynamicResource ResourceKey=plbtn}" Click="create_Click" />
+                                    <Button Grid.Column="1" Content="Удалить" Style="{DynamicResource ResourceKey=plbtn}"
+                                       Tag="Удалить"  Click="Button_Click_1" />
+                                    <Button Grid.Column="2" Content="Удалить все" Style="{DynamicResource ResourceKey=plbtn}"
+                                       Tag="Удалить все" Click="Button_Click_2" />
+                                </Grid>
+                            </Grid>
+                        </Label>
+                        <Label Name="pllistContent" Grid.Column="1" Style="{DynamicResource ResourceKey=playlist}" 
+                               Height="{Binding ElementName=grid,Path=Height}" >
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid Grid.Row="0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="35" />
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Style="{DynamicResource ResourceKey=txt}" Grid.Column="0" 
+                                                MaxHeight="35" Text="{Binding ElementName=listPlay,Path=SelectedItem.name}" />
+                                    <Button Style="{DynamicResource ResourceKey=winbtn}" Grid.Column="1" VerticalAlignment="Top"
+                                            Click="Button_Click">
+                                        <Button.Background>
+                                            <ImageBrush Stretch="None" Viewbox="55,5,0,0" ViewboxUnits="Absolute"
+                                                        ImageSource="{DynamicResource ResourceKey=bmp3}"></ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+                                </Grid>
+                                <ListView Grid.Row="1" Name="playlistSel" Style="{DynamicResource ResourceKey=pllistView1}"
+                                          MouseDoubleClick="pllistContent_MouseDoubleClick"
+                                          SelectionChanged="playlistSel_SelectionChanged">
+                                    <ListView.ItemTemplate>
+                                        <DataTemplate>
+                                            <Grid>
+                                                <TextBlock Text="{Binding name}" TextWrapping="Wrap" />
+                                            </Grid>
+                                        </DataTemplate>
+                                    </ListView.ItemTemplate>
+                                </ListView>
+                                <Grid Name="gr" Grid.Row="3" Margin="40 0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="22" />
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+                                    <Button Name="add" Grid.Column="0" Grid.Row="0" Content="+" Tag="Добавить"
+                                            Style="{DynamicResource ResourceKey=plbtn}" Click="add_Click" />
+                                    <Button Name="del_elem" Grid.Column="1" Grid.Row="0" Content="-" Tag="Удалить"
+                                            Style="{DynamicResource ResourceKey=plbtn}" Click="del_elem_Click" />
+                                    <Button Name="cur_file" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="1"
+                                            Content="+ Текущий файл" Tag="Текущий файл"
+                                            Style="{DynamicResource ResourceKey=plbtn}" Height="0" Click="cur_file_Click" />
+                                </Grid>
+                            </Grid>
+                        </Label>
+                    </Grid>
+                    <Grid.ContextMenu>
+                        <ContextMenu Name="menu">
+                            <ContextMenu.Items>
+                                <MenuItem Name="openfile" Header="Открыть файл" Style="{DynamicResource ResourceKey=tb}"
+                                            Click="openfile_Click" />
+                                <MenuItem Name="openlists" Header="Плейлисты" Style="{DynamicResource ResourceKey=tb}"
+                                           MouseDown="Playlist_Click" Click="openlists_Click" />
+                                <MenuItem Header="Обложки" Style="{DynamicResource tb}" > 
+                                    <MenuItem Name="gray" Style="{DynamicResource ResourceKey=tb1}" 
+                                              Tag="1" Header="Серая" Click="gray_Click" />
+                                    <MenuItem Name="blue" Style="{DynamicResource ResourceKey=tb1}"
+                                              Tag="2" Header="Синяя" Click="gray_Click" />
+                                    <MenuItem Name="black" Style="{DynamicResource ResourceKey=tb1}"
+                                              Tag="3" Header="Черная" Click="gray_Click" />
+                                </MenuItem>
+                                <Separator Style="{DynamicResource ResourceKey=sp}" />
+                                <MenuItem Header="Выход" Style="{DynamicResource ResourceKey=tb}" MouseDown="close_Click" Click="MenuItem_Click" />
+                            </ContextMenu.Items>
+                        </ContextMenu>
+                    </Grid.ContextMenu>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="50" />
+                    </Grid.ColumnDefinitions>
+                    <Button Name="time" Grid.Column="0" Style="{DynamicResource ResourceKey=btntime}"
+                            Content="00:00:00" />
+                    <Button Name="timeleft" Grid.Column="2" Style="{DynamicResource ResourceKey=btntime}"
+                            Content="00:00:00" />
+                    <ProgressBar Name="progress" Style="{DynamicResource ResourceKey=progressplay}" Grid.Column="1"
+                             MouseDown="progress_MouseDown" />
+                    <Slider Name="slider" Style="{DynamicResource ResourceKey=slider_progress}"  Grid.Column="1"
+                            Maximum="100"
+                            ValueChanged="slider_ValueChanged" />
+                </Grid>
+                <Grid Grid.Row="3" HorizontalAlignment="Stretch">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Style="{DynamicResource ResourceKey=leftW}"/>
+                        <ColumnDefinition Style="{DynamicResource ResourceKey=centerW}" />
+                        <ColumnDefinition Style="{DynamicResource ResourceKey=rightW}"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Row="3" Grid.ColumnSpan="3" Style="{DynamicResource ResourceKey=gridBot}"/>
+                    <Grid HorizontalAlignment="Left" Margin="10 0" Style="{DynamicResource ResourceKey=grleft}">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Button Name="btnPplOpen" Grid.Column="0" Style="{DynamicResource ResourceKey=btnOpen}"
+                                ToolTip="Плейлисты" Click="Playlist_Click">
+                            <Image Source="{DynamicResource ResourceKey=Plist}" />
+                        </Button>
+                        <Button Name="btnOpenFile" Grid.Column="1" Style="{DynamicResource ResourceKey=btnOpen}"
+                                ToolTip="Открыть файл" Click="btnOpenFile_Click">
+                            <Image Source="{DynamicResource ResourceKey=Open}" />
+                        </Button>
+                    </Grid>
+                    <Grid Style="{DynamicResource ResourceKey=grcenter}">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40" />
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition Width="40" />
+                        </Grid.ColumnDefinitions>
+                    <Button Style="{DynamicResource ResourceKey=btnLR}" Name="left" Grid.Column="0" Click="left_Click">
+                        <Image Source="{DynamicResource ResourceKey=LRl}" Style="{DynamicResource ResourceKey=panel}" />
+                    </Button>
+                    <Label Name="pausestate" Grid.Column="1" Style="{DynamicResource ResourceKey=plstat}" Tag="PAUSE" />
+                    <Button Style="{DynamicResource ResourceKey=btn}" Name="pause" Grid.Column="1" Click="pause_Click">
+                        <Image Source="{DynamicResource ResourceKey=Image1}" Style="{DynamicResource ResourceKey=panel}" />
+                    </Button>
+                    <Label Name="playstate" Grid.Column="2" Style="{DynamicResource ResourceKey=plstat}" Tag="PLAY" />
+                    <Button Style="{DynamicResource ResourceKey=btn}" Name="play" Grid.Column="2" Click="play_Click">
+                        <Image Source="{DynamicResource ResourceKey=Image2}" Style="{DynamicResource ResourceKey=panel}" />
+                    </Button>
+                    <Label Name="stopstate" Grid.Column="3" Style="{DynamicResource ResourceKey=plstat}" Tag="STOP" />
+                    <Button Style="{DynamicResource ResourceKey=btn}" Name="stop" Grid.Column="3" Click="stop_Click">
+                        <Image Source="{DynamicResource ResourceKey=Image3}" Style="{DynamicResource ResourceKey=panel}"
+                               />
+                    </Button>
+                    <Button Style="{DynamicResource ResourceKey=btnLR}" Name="right" Grid.Column="4" Click="right_Click">
+                        <Image Source="{DynamicResource ResourceKey=LRr}" Style="{DynamicResource ResourceKey=panel}" />
+                    </Button>
+                    </Grid>
+                    <Grid Style="{DynamicResource ResourceKey=grright}">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="16" />
+                            <ColumnDefinition Width="75" />
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.Column="1" Style="{DynamicResource ResourceKey=imgVolum}" />
+                        <ProgressBar Grid.Column="2" Style="{DynamicResource ResourceKey=progressvolum}"
+                                 Value="{Binding ElementName=volum,Path=Value,Mode=OneWay}" />
+                        <Slider Grid.Column="2" Style="{DynamicResource ResourceKey=slider_volum}"
+                            Name="volum" ValueChanged="volum_ValueChanged" />
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Border>
+    </Border>
+</Window>

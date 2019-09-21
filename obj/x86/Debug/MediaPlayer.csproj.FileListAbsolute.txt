@@ -1,0 +1,67 @@
+D:\VideoPlayer\VideoPlayer\obj\x86\Debug\MainWindow.baml
+D:\VideoPlayer\VideoPlayer\obj\x86\Debug\Style1.baml
+D:\VideoPlayer\VideoPlayer\obj\x86\Debug\Style2.baml
+D:\VideoPlayer\VideoPlayer\obj\x86\Debug\App.baml
+D:\VideoPlayer\VideoPlayer\obj\x86\Debug\MainWindow.g.cs
+D:\VideoPlayer\VideoPlayer\obj\x86\Debug\App.g.cs
+D:\VideoPlayer\VideoPlayer\obj\x86\Debug\MediaPlayer_MarkupCompile.cache
+D:\VideoPlayer\VideoPlayer\obj\x86\Debug\MediaPlayer.g.resources
+D:\VideoPlayer\VideoPlayer\obj\x86\Debug\MediaPlayer.Properties.Resources.resources
+D:\VideoPlayer\VideoPlayer\obj\x86\Debug\MediaPlayer.csproj.GenerateResource.Cache
+D:\VideoPlayer\VideoPlayer\bin\Debug\MediaPlayer.exe
+D:\VideoPlayer\VideoPlayer\bin\Debug\MediaPlayer.pdb
+D:\VideoPlayer\VideoPlayer\bin\Debug\taglib-sharp.dll
+D:\VideoPlayer\VideoPlayer\obj\x86\Debug\MediaPlayer.exe
+D:\VideoPlayer\VideoPlayer\obj\x86\Debug\MediaPlayer.pdb
+D:\VideoPlayer\VideoPlayer\obj\x86\Debug\MediaPlayer.csprojResolveAssemblyReference.cache
+D:\VideoPlayer\VideoPlayer\obj\x86\Debug\Style3.baml
+D:\MediaPlayer\VideoPlayer\bin\Debug\MediaPlayer.exe
+D:\MediaPlayer\VideoPlayer\bin\Debug\MediaPlayer.pdb
+D:\MediaPlayer\VideoPlayer\bin\Debug\taglib-sharp.dll
+D:\MediaPlayer\VideoPlayer\obj\x86\Debug\MediaPlayer.csprojResolveAssemblyReference.cache
+D:\MediaPlayer\VideoPlayer\obj\x86\Debug\MainWindow.baml
+D:\MediaPlayer\VideoPlayer\obj\x86\Debug\Style1.baml
+D:\MediaPlayer\VideoPlayer\obj\x86\Debug\Style2.baml
+D:\MediaPlayer\VideoPlayer\obj\x86\Debug\Style3.baml
+D:\MediaPlayer\VideoPlayer\obj\x86\Debug\App.baml
+D:\MediaPlayer\VideoPlayer\obj\x86\Debug\MainWindow.g.cs
+D:\MediaPlayer\VideoPlayer\obj\x86\Debug\App.g.cs
+D:\MediaPlayer\VideoPlayer\obj\x86\Debug\MediaPlayer_MarkupCompile.cache
+D:\MediaPlayer\VideoPlayer\obj\x86\Debug\MediaPlayer.g.resources
+D:\MediaPlayer\VideoPlayer\obj\x86\Debug\MediaPlayer.Properties.Resources.resources
+D:\MediaPlayer\VideoPlayer\obj\x86\Debug\MediaPlayer.csproj.GenerateResource.Cache
+D:\MediaPlayer\VideoPlayer\obj\x86\Debug\MediaPlayer.exe
+D:\MediaPlayer\VideoPlayer\obj\x86\Debug\MediaPlayer.pdb
+D:\MediaPlayer\MediaPlayer\bin\Debug\MediaPlayer.exe
+D:\MediaPlayer\MediaPlayer\bin\Debug\MediaPlayer.pdb
+D:\MediaPlayer\MediaPlayer\bin\Debug\taglib-sharp.dll
+D:\MediaPlayer\MediaPlayer\obj\x86\Debug\MainWindow.baml
+D:\MediaPlayer\MediaPlayer\obj\x86\Debug\Style1.baml
+D:\MediaPlayer\MediaPlayer\obj\x86\Debug\Style2.baml
+D:\MediaPlayer\MediaPlayer\obj\x86\Debug\Style3.baml
+D:\MediaPlayer\MediaPlayer\obj\x86\Debug\App.baml
+D:\MediaPlayer\MediaPlayer\obj\x86\Debug\MainWindow.g.cs
+D:\MediaPlayer\MediaPlayer\obj\x86\Debug\App.g.cs
+D:\MediaPlayer\MediaPlayer\obj\x86\Debug\MediaPlayer_MarkupCompile.cache
+D:\MediaPlayer\MediaPlayer\obj\x86\Debug\MediaPlayer.g.resources
+D:\MediaPlayer\MediaPlayer\obj\x86\Debug\MediaPlayer.Properties.Resources.resources
+D:\MediaPlayer\MediaPlayer\obj\x86\Debug\MediaPlayer.csproj.GenerateResource.Cache
+D:\MediaPlayer\MediaPlayer\obj\x86\Debug\MediaPlayer.exe
+D:\MediaPlayer\MediaPlayer\obj\x86\Debug\MediaPlayer.pdb
+D:\MediaPlayer\MediaPlayer\obj\x86\Debug\MediaPlayer.csprojResolveAssemblyReference.cache
+D:\7. Учеба\Projects\MediaPlayer WPF\MediaPlayer\obj\x86\Debug\MediaPlayer.exe
+D:\7. Учеба\Projects\MediaPlayer WPF\MediaPlayer\obj\x86\Debug\MediaPlayer.pdb
+D:\7. Учеба\Projects\MediaPlayer WPF\MediaPlayer\bin\Debug\MediaPlayer.exe
+D:\7. Учеба\Projects\MediaPlayer WPF\MediaPlayer\bin\Debug\MediaPlayer.pdb
+D:\7. Учеба\Projects\MediaPlayer WPF\MediaPlayer\obj\x86\Debug\MainWindow.baml
+D:\7. Учеба\Projects\MediaPlayer WPF\MediaPlayer\obj\x86\Debug\Style1.baml
+D:\7. Учеба\Projects\MediaPlayer WPF\MediaPlayer\obj\x86\Debug\Style2.baml
+D:\7. Учеба\Projects\MediaPlayer WPF\MediaPlayer\obj\x86\Debug\Style3.baml
+D:\7. Учеба\Projects\MediaPlayer WPF\MediaPlayer\obj\x86\Debug\App.baml
+D:\7. Учеба\Projects\MediaPlayer WPF\MediaPlayer\obj\x86\Debug\MainWindow.g.cs
+D:\7. Учеба\Projects\MediaPlayer WPF\MediaPlayer\obj\x86\Debug\App.g.cs
+D:\7. Учеба\Projects\MediaPlayer WPF\MediaPlayer\obj\x86\Debug\MediaPlayer_MarkupCompile.cache
+D:\7. Учеба\Projects\MediaPlayer WPF\MediaPlayer\obj\x86\Debug\MediaPlayer.g.resources
+D:\7. Учеба\Projects\MediaPlayer WPF\MediaPlayer\obj\x86\Debug\MediaPlayer.Properties.Resources.resources
+D:\7. Учеба\Projects\MediaPlayer WPF\MediaPlayer\obj\x86\Debug\MediaPlayer.csproj.GenerateResource.Cache
+D:\7. Учеба\Projects\MediaPlayer WPF\MediaPlayer\obj\x86\Debug\MediaPlayer.csprojResolveAssemblyReference.cache
